@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, san-sans-serif;
+  margin: 0;
+  line-height: 1.4;
+  color: #000;
+}
+
+ul{
+  list-style-type: none
+}
+
+
+nav a{
+  color: #000; text-decoration: none;
+}
+#lieblinkslink{
+  color: pink;
+}
+/* IDs in HTML werden ins css zu einem #*/
+.container{
+  background: blue;
+}
