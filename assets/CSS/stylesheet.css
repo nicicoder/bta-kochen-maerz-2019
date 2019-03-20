@@ -1,6 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   font-family: Helvetica, Arial, san-sans-serif;
   margin: 0;
@@ -8,18 +9,71 @@ body {
   color: #000;
 }
 
-ul{
+ul {
   list-style-type: none
 }
 
+nav a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
 
-nav a{
-  color: #000; text-decoration: none;
+nav a:hover{
+  color: #66ff99;
 }
-#lieblinkslink{
-  color: pink;
+
+
+
+#navigation {
+  display: none;
 }
-/* IDs in HTML werden ins css zu einem #*/
+
+#navigation.show {
+  display: block;
+}
+
+#burger {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1REM;
+  padding-right: 1REM;
+}
+
+#hero{
+  background-image: url(../img/intro.jpg);
+  
+}
+
+
+
+@media (min-width: 1024px) {
+  #burger {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+  }
+
+  nav li{
+    float: left;
+    margin-left: 30px;
+    text-transform:uppercase;
+    font-weight: bold;
+  }
+
 .container{
-  background: blue;
+  width: 90%;
+  margin: auto;
+}
+
+
+
 }
